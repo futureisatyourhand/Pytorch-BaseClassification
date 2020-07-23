@@ -16,3 +16,15 @@ classes_60.pth acc:0.7593
 
 # case2
 conv(3,64)->maxpool->conv(64,128)->...->FC->SoftMax(-1)
+classes_20.pth acc:0.7909
+
+classes_80.pth acc:0.7593
+
+classes_0.pth acc:0.7054
+
+classes_40.pth acc:0.7756
+
+classes_60.pth acc:0.7776
+
+# case3
+conv->conv->conv
