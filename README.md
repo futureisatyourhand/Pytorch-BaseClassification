@@ -1,5 +1,6 @@
 # Pytorch-BaseClassification
 
+# The influence of pooling for classification task
 # case1
 conv(3,64)->avgpool->conv(64,128)->....->FC->softmax(-1)
 
