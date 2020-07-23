@@ -41,3 +41,14 @@ classes_0.pth acc:0.7143
 classes_40.pth acc:0.7998
 
 classes_60.pth acc:0.8265
+# global average pooling 
+conv->conv->conv->conv--->global average pooling ->fc->softmax(-1)
+
+classes_20.pth acc:0.8067
+
+classes_80.pth acc:0.7899
+
+classes_0.pth acc:0.6975
+
+classes_40.pth acc:0.8077
+
