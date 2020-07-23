@@ -44,7 +44,7 @@ batch_size=args.batch
 dataset=MyData(args.datas,transforms=normalize)
 valid=MyData(args.test,transforms=normalize)
 dataloader=DataLoader(dataset,shuffle=True,batch_size=batch_size,num_workers=2,collate_fn=collate_fn)
-valid_dataloader=DataLoader(valid,shuffle=True,batch_size=batch_size,num_workers=2,collate_fn=collate_fn)
+valid_dataloader=DataLoader(valid,shuffle=False,batch_size=batch_size,num_workers=2,collate_fn=collate_fn)
 ##定义优化器
 optimizer=torch.optim.Adam([{'params':model.parameters()}],lr=args.lr,betas=(args.beta1,args.beta2))
 nums=len(dataloader)
