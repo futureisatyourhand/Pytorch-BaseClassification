@@ -27,5 +27,17 @@ classes_40.pth acc:0.7756
 
 classes_60.pth acc:0.7776
 
-# case3
-conv->conv->conv
+# case3:only 
+According to the experiment of case2, maximum pooling is slightly better than average pooling, and we only use maximum pooling behind the network.
+
+conv->conv->conv->--——>maxpool2d->conv->maxpool2d-fc->softmax(-1)
+
+classes_20.pth acc:0.8161
+
+classes_80.pth acc:0.8028
+
+classes_0.pth acc:0.7143
+
+classes_40.pth acc:0.7998
+
+classes_60.pth acc:0.8265
